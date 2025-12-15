@@ -1,0 +1,1203 @@
+{
+    "model_version": "01.00",
+    "prompt_version": "01.00.00.00",
+    "results": [
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "ChatGPT 5.1",
+            "report_date": "20251209153000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "Interpreted 'The American Left' as the broad constellation of left-leaning political tendencies in the United States in the mid-2020s, including progressive, social-democratic, and democratic-socialist orientations. This reflects general ideological patterns rather than any single organization.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -2.5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Generally supports increased state involvement in welfare, regulation, and social protections, though not uniformly across all policy areas."
+                },
+                "decision_structure": {
+                    "value": 3,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Often favors more participatory and decentralized models within movements, but typically supports centralized federal action for large-scale social programs.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": -4.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Tends to support greater collective or public control over key sectors while maintaining mixed-market structures."
+                },
+                "economic_allocation": {
+                    "value": -3.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Supports increased administrative coordination in areas such as healthcare, environmental regulation, and labor standards."
+                },
+                "social_priority": {
+                    "value": 6,
+                    "gain": 0.9,
+                    "confidence": 0.8,
+                    "notes": "Emphasizes community welfare, social equity, and collective responsibility over strictly individual autonomy."
+                },
+                "cultural_orientation": {
+                    "value": 7,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Generally favors cultural and social change, especially regarding equity, inclusivity, and expanded rights."
+                },
+                "political_theology": {
+                    "value": -7.5,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Predominantly secular in political orientation, supporting separation of religious doctrine from governance.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": 4.5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Frequently incorporates global or international perspectives, though still engages with national policy frameworks."
+                },
+                "social_power_distribution": {
+                    "value": 6,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Advocates for more horizontal distribution of power, emphasizing reduced hierarchy and expanded social equity."
+                },
+                "institutional_orientation": {
+                    "value": -1.5,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Mixed orientation: critical of certain institutions yet supportive of strengthening or reforming them rather than rejecting them outright."
+                },
+                "legal_order_structure": {
+                    "value": 4,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Generally supports flexible legal frameworks that adapt to evolving social norms and conditions."
+                },
+                "human_behavioral_assumption": {
+                    "value": -6.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Tends to assume a cooperative human orientation, emphasizing mutual aid, solidarity, and collective problem-solving.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "ChatGPT 5 Instant",
+            "report_date": "20251209140000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "This classification treats “The American Left” broadly — including both progressive/social-democratic wings and more radical socialist/communist/anarchist elements — as they exist in the United States around the present. Because the Left in the U.S. is internally diverse and composed of shifting coalitions, many of these values reflect tendencies rather than a monolithic ideology.",
+            "sources": [
+                "American Left — Wikipedia",
+                "Left-wing politics — Wikipedia",
+                "The Left-Wing Activists Who Want to Change American Politics (2025 report)",
+                "Remapping the American Left: A History of Radicalism in the United States"
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 4,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Tendency toward support for significant government involvement in regulation and social welfare, though not uniformly authoritarian."
+                },
+                "decision_structure": {
+                    "value": 1,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Mix between centralized institutions (state) and decentralized grassroots or community action; some emphasis on participatory democracy.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 2.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Broadly supportive of some collective or public ownership or control (e.g. public services), though many within the Left accept private property under regulation.",
+                    "polarity_corrected": true
+                },
+                "economic_allocation": {
+                    "value": 2,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Preference for a mixture of market mechanisms and administrative allocation, especially for social goods and welfare services.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": -5,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strong emphasis on community welfare, equity, and social justice over pure individualism.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": -4,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Generally change-oriented, favoring reforms in social norms, civil rights, and inclusive cultural values.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": 0,
+                    "gain": 0.3,
+                    "confidence": 0.6,
+                    "notes": "Mostly secular in orientation, though segments may include religious social activism — religion not central to political doctrine broadly."
+                },
+                "identity_scope": {
+                    "value": -1.5,
+                    "gain": 0.6,
+                    "confidence": 0.6,
+                    "notes": "Tends to emphasize national social welfare and domestic justice rather than strong global-identity politics, though international solidarity is present in some factions."
+                },
+                "social_power_distribution": {
+                    "value": -3,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Preferences lean toward more horizontal power distribution, reducing hierarchical inequalities."
+                },
+                "institutional_orientation": {
+                    "value": 3,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Moderate-to-strong faith in public institutions (government, welfare state, regulatory bodies) as tools for social justice and equity."
+                },
+                "legal_order_structure": {
+                    "value": 1,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Some support for stable legal frameworks, but also openness to legal reforms to address social inequality."
+                },
+                "human_behavioral_assumption": {
+                    "value": -2,
+                    "gain": 0.6,
+                    "confidence": 0.6,
+                    "notes": "An assumption that cooperation and mutual support are important to social cohesion and progress, rather than purely competitive individualism."
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "GPT-5 Thinking",
+            "report_date": "20251209153000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "Interprets \"American Left\" as the contemporary U.S. left-of-center tendency spanning liberals and progressives in major parties and movements. Positions reflect common themes in 2025 platforms and discourse; there is variation among subgroups and across issues.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -3.8,
+                    "gain": 0.75,
+                    "confidence": 0.72,
+                    "notes": "Generally favors a more active state role in regulation, social safety nets, and civil-rights enforcement."
+                },
+                "decision_structure": {
+                    "value": -1.6,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Leans toward national standards and executive/legislative action on key issues while retaining federalism."
+                },
+                "ownership_model": {
+                    "value": 2.6,
+                    "gain": 0.7,
+                    "confidence": 0.68,
+                    "notes": "Supports a mixed economy with predominantly private ownership plus public/collective options in select sectors."
+                },
+                "economic_allocation": {
+                    "value": -2.2,
+                    "gain": 0.65,
+                    "confidence": 0.66,
+                    "notes": "Favors regulated markets with targeted planning, public programs, and administrative coordination for public goods.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": -3.9,
+                    "gain": 0.8,
+                    "confidence": 0.74,
+                    "notes": "Emphasizes communal welfare, equity, and protections for vulnerable groups alongside individual rights.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": 4.6,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Advocates adaptive change to social norms and institutions to address inclusion and emerging conditions."
+                },
+                "political_theology": {
+                    "value": -4,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Generally endorses separation of church and state and secular policy rationales.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": -2.1,
+                    "gain": 0.5,
+                    "confidence": 0.62,
+                    "notes": "More open to international cooperation and global identity frames while retaining national considerations.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": 3.1,
+                    "gain": 0.7,
+                    "confidence": 0.67,
+                    "notes": "Prefers flatter social hierarchies and policies that reduce status and wealth disparities."
+                },
+                "institutional_orientation": {
+                    "value": -2.1,
+                    "gain": 0.6,
+                    "confidence": 0.6,
+                    "notes": "Shows relatively higher trust in scientific, academic, and some governmental institutions, alongside reform efforts."
+                },
+                "legal_order_structure": {
+                    "value": -2.7,
+                    "gain": 0.5,
+                    "confidence": 0.62,
+                    "notes": "Supports adaptable laws and regulatory updates in response to new data and social needs.",
+                    "polarity_corrected": true
+                },
+                "human_behavioral_assumption": {
+                    "value": 2,
+                    "gain": 0.4,
+                    "confidence": 0.58,
+                    "notes": "Tends to assume cooperative outcomes are achievable with supportive institutions and incentives."
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "ChatGPT-4o",
+            "report_date": "20251209152800",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "This classification interprets 'The American Left' as a broad coalition of political ideologies in the United States associated with progressive, socialist, and liberal views in 2025. This includes elements ranging from center-left liberals (e.g., mainstream Democratic Party progressives) to more radical democratic socialists and left-wing activists. The model reflects general tendencies rather than positions of any single group or leader.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -3,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Generally supports government intervention in areas like healthcare, environment, and labor rights, but also advocates for civil liberties and resistance to excessive surveillance."
+                },
+                "decision_structure": {
+                    "value": 2.5,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "While electoral politics often favor centralized parties, many factions within the American Left promote participatory democracy and decentralized grassroots organizing.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 4,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Includes a mix of private ownership supporters (especially in liberal circles) and strong advocacy for public or cooperative ownership among socialist-leaning factions."
+                },
+                "economic_allocation": {
+                    "value": 3.5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Often favors regulatory and redistributive frameworks, including taxation, social spending, and government role in service provision, though still operating within market economies."
+                },
+                "social_priority": {
+                    "value": -6,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strong emphasis on collective responsibility, equity, and mutual aid; supports public goods and protections for marginalized communities.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": 7.5,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Heavily favors cultural progressivism, including support for changing established norms related to race, gender, sexuality, and historical narratives."
+                },
+                "political_theology": {
+                    "value": -8,
+                    "gain": 0.6,
+                    "confidence": 0.9,
+                    "notes": "Tends to advocate secularism in governance, with strong support for the separation of church and state.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": 5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "While some members support national reforms, many express solidarity with global movements and favor transnational cooperation on issues like climate and justice."
+                },
+                "social_power_distribution": {
+                    "value": -6,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Critiques hierarchical systems and seeks more egalitarian structures, both socially and economically.",
+                    "polarity_corrected": true
+                },
+                "institutional_orientation": {
+                    "value": -2,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Often skeptical of traditional institutions (e.g., law enforcement, corporate media), but varies between reformist and abolitionist factions."
+                },
+                "legal_order_structure": {
+                    "value": 4,
+                    "gain": 0.4,
+                    "confidence": 0.6,
+                    "notes": "Generally supports legal reforms and flexible systems that adapt to evolving social standards and promote restorative justice."
+                },
+                "human_behavioral_assumption": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Tends to assume people are capable of cooperation, especially in collective systems, though acknowledges the need for safeguards against exploitation.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Grok 4 Fast",
+            "report_date": "20251209120000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The American Left is interpreted as the broad contemporary progressive-to-socialist spectrum in U.S. politics as of the mid-2020s, encompassing mainstream Democratic Party leadership, progressive activists, democratic socialists (e.g. DSA), and adjacent movements. It does not include the far-left fringe (e.g. Marxist-Leninist vanguard parties). Assessment reflects dominant tendencies in policy platforms, rhetoric, and coalition behavior circa 2020-2025.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 5.5,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Strong support for expanded federal regulatory and welfare-state authority in economic, environmental, health, and social-justice domains."
+                },
+                "decision_structure": {
+                    "value": 2,
+                    "gain": 0.6,
+                    "confidence": 0.85,
+                    "notes": "Prefers national-level policy over state or local control on most issues, but supports decentralized implementation in some areas (e.g. community policing reform).",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 3,
+                    "gain": 0.7,
+                    "confidence": 0.9,
+                    "notes": "Generally accepts private ownership but favors significantly more collective/public ownership or control in healthcare, utilities, housing, and education."
+                },
+                "economic_allocation": {
+                    "value": 5,
+                    "gain": 0.85,
+                    "confidence": 0.95,
+                    "notes": "Advocates heavy administrative regulation, planning, and redistribution while retaining regulated market mechanisms rather than full central planning."
+                },
+                "social_priority": {
+                    "value": 6,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Strong emphasis on collective responsibility, equity outcomes, and community welfare over strict individual autonomy."
+                },
+                "cultural_orientation": {
+                    "value": -8,
+                    "gain": 0.95,
+                    "confidence": 0.95,
+                    "notes": "Highly change-oriented; actively seeks to revise norms around gender, race, sexuality, and traditional institutions.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": 7,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Predominantly secular; supports strict separation of church and state and opposes religious influence in policy.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": -4.5,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Leans toward globalist and cosmopolitan identity; supportive of immigration, international institutions, and transnational social-justice frameworks.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -7,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Seeks to flatten traditional hierarchies (race, gender, class) and redistribute social power more horizontally.",
+                    "polarity_corrected": true
+                },
+                "institutional_orientation": {
+                    "value": 3,
+                    "gain": 0.7,
+                    "confidence": 0.85,
+                    "notes": "Generally trusts and seeks to expand major institutions (universities, public health agencies, administrative state) but deeply skeptical of police, military, and corporate media."
+                },
+                "legal_order_structure": {
+                    "value": 4,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Favors flexible, context-sensitive legal standards (living constitution, equity over equality) over rigid originalist or strictly codified rules."
+                },
+                "human_behavioral_assumption": {
+                    "value": 5.5,
+                    "gain": 0.75,
+                    "confidence": 0.85,
+                    "notes": "Tends to view humans as cooperative when structural inequalities are removed and proper incentives/support exist; emphasizes systemic forces over individual competition."
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Grok-4 Expert",
+            "report_date": "20251209000000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "Interpreted as contemporary liberal, progressive, and left-wing movements in the United States, emphasizing shared themes of equality and government intervention. Values represent general tendencies across diverse factions.",
+            "sources": [
+                "https://en.wikipedia.org/wiki/Left-wing_politics",
+                "https://www.pewresearch.org/politics/2021/11/09/progressive-left/",
+                "https://democracyjournal.org/arguments/the-american-left-is-a-historical-success-story/",
+                "Model-internal knowledge on American political ideologies"
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 7,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Supports extensive government regulation and social programs to promote equality.",
+                    "polarity_corrected": true
+                },
+                "decision_structure": {
+                    "value": 5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Favors centralized federal policies for uniform implementation of progressive goals.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 6,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Advocates for increased public and collective control in sectors like healthcare."
+                },
+                "economic_allocation": {
+                    "value": -6,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Prefers regulatory and planning mechanisms to correct market inequalities.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": -7,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Emphasizes community welfare and collective responsibilities.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": 8,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Promotes adaptation and reform of social norms for progress."
+                },
+                "political_theology": {
+                    "value": 7,
+                    "gain": 0.7,
+                    "confidence": 0.9,
+                    "notes": "Generally advocates for separation of religious influence from governance."
+                },
+                "identity_scope": {
+                    "value": -6,
+                    "gain": 0.7,
+                    "confidence": 0.85,
+                    "notes": "Supports internationalism and broader identities beyond national boundaries.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -8,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Seeks to reduce hierarchies and promote egalitarian structures.",
+                    "polarity_corrected": true
+                },
+                "institutional_orientation": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Tends to trust institutions while pushing for internal reforms."
+                },
+                "legal_order_structure": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Favors adaptable laws to respond to social changes.",
+                    "polarity_corrected": true
+                },
+                "human_behavioral_assumption": {
+                    "value": -6,
+                    "gain": 0.7,
+                    "confidence": 0.85,
+                    "notes": "Assumes potential for cooperation with supportive structures.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Grok 4.1 Thinking Beta",
+            "report_date": "20251209120000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "Interpreted as contemporary progressive, socialist, and liberal ideologies within US politics, focusing on post-2020 developments; values reflect broad consensus from historical and recent descriptions.",
+            "sources": [
+                "https://en.wikipedia.org/wiki/Left-wing_politics_in_the_United_States",
+                "Web search results on 'American Left political ideology characteristics 2025'"
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 7.5,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Supports extensive government regulation and welfare programs to promote equality."
+                },
+                "decision_structure": {
+                    "value": 6,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Emphasizes grassroots and participatory decision-making over centralized control.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": -5.5,
+                    "gain": 0.85,
+                    "confidence": 0.9,
+                    "notes": "Advocates collective and social ownership models alongside critiques of private dominance.",
+                    "polarity_corrected": true
+                },
+                "economic_allocation": {
+                    "value": 4,
+                    "gain": 0.8,
+                    "confidence": 0.85,
+                    "notes": "Favors administrative planning and regulation over pure market mechanisms."
+                },
+                "social_priority": {
+                    "value": -8,
+                    "gain": 1,
+                    "confidence": 1,
+                    "notes": "Prioritizes collective welfare, interdependence, and social justice.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": 7.5,
+                    "gain": 0.9,
+                    "confidence": 0.95,
+                    "notes": "Promotes adaptation and revision of norms for inclusivity and progress."
+                },
+                "political_theology": {
+                    "value": -8,
+                    "gain": 0.7,
+                    "confidence": 0.9,
+                    "notes": "Generally maintains separation of religious doctrine from political governance."
+                },
+                "identity_scope": {
+                    "value": 6.5,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Leans toward international solidarity and global civic engagement."
+                },
+                "social_power_distribution": {
+                    "value": -7.5,
+                    "gain": 0.85,
+                    "confidence": 0.9,
+                    "notes": "Seeks to flatten hierarchies through egalitarian and cooperative structures."
+                },
+                "institutional_orientation": {
+                    "value": -6,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Exhibits skepticism toward established institutions, preferring grassroots alternatives."
+                },
+                "legal_order_structure": {
+                    "value": 5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Supports adaptable legal frameworks to address evolving social needs."
+                },
+                "human_behavioral_assumption": {
+                    "value": -7,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Assumes capacity for cooperation and mutual benefit in collective action.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Claude Haiku 4.5",
+            "report_date": "20251209000000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The American Left is a broad coalition spanning progressive Democrats, socialists, labor advocates, and social justice movements. Given no specific historical period, this analysis reflects the contemporary American Left as of 2025. The heterogeneity of this movement introduces moderate confidence levels across axes, as positions vary significantly between moderate progressives, democratic socialists, and radical activists. Values reflect dominant tendencies within mainstream left-leaning discourse and institutions.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -4.5,
+                    "gain": 0.75,
+                    "confidence": 0.75,
+                    "notes": "The American Left generally favors stronger state intervention in social welfare, healthcare, labor protections, and environmental regulation, but stops short of totalitarian models. Mainstream progressives support robust government programs rather than minimal state authority.",
+                    "polarity_corrected": true
+                },
+                "decision_structure": {
+                    "value": 3,
+                    "gain": 0.65,
+                    "confidence": 0.7,
+                    "notes": "Slight lean toward decentralization through emphasis on local democracy, participatory governance, and community control, though this coexists with support for federal programs. Labor unions and grassroots movements embody decentralized decision-making.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 6,
+                    "gain": 0.8,
+                    "confidence": 0.75,
+                    "notes": "The American Left significantly favors collective or public ownership over private ownership. Core positions include public healthcare, public education, public utilities, and worker ownership or control models. This is a defining ideological characteristic."
+                },
+                "economic_allocation": {
+                    "value": 6.5,
+                    "gain": 0.85,
+                    "confidence": 0.75,
+                    "notes": "Strong preference for administrative allocation through regulation, planning, and redistribution mechanisms over pure market allocation. Support for price controls, labor standards, and centralized economic planning varies by wing but administrative coordination is central."
+                },
+                "social_priority": {
+                    "value": 7,
+                    "gain": 0.9,
+                    "confidence": 0.85,
+                    "notes": "Community priority is a defining characteristic of the American Left. Emphasis on collective welfare, social safety nets, environmental stewardship, and interdependence rather than individual self-reliance. This is one of the most defining ideological dimensions.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": -6.5,
+                    "gain": 0.85,
+                    "confidence": 0.8,
+                    "notes": "Strong change-oriented perspective favoring social transformation, revision of traditional norms, progressive social policies on gender and sexuality, and cultural modernization. Critical examination of historical institutions is characteristic."
+                },
+                "political_theology": {
+                    "value": -7,
+                    "gain": 0.7,
+                    "confidence": 0.75,
+                    "notes": "Predominantly secular orientation with emphasis on separation of church and state. However, progressive religious communities and social gospel traditions exist within the left. Secular frameworks for policy predominate in mainstream left discourse.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": -5.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Moderate lean toward global identity emphasis with concerns about internationalism, global justice, immigration, and transnational movements. Some tension exists with labor protectionism and national economic interests."
+                },
+                "social_power_distribution": {
+                    "value": -7.5,
+                    "gain": 0.85,
+                    "confidence": 0.8,
+                    "notes": "Strong emphasis on horizontal power distribution and reduction of hierarchical structures. Support for worker democracy, anti-hierarchical organizing, economic equality, and flattened social structures. Critique of concentrated power is central."
+                },
+                "institutional_orientation": {
+                    "value": -3.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Moderate skepticism toward institutional legitimacy, particularly regarding corporate media, law enforcement, and judicial systems viewed as structurally biased. However, support for strengthened regulatory agencies and scientific institutions shows selective institutional confidence."
+                },
+                "legal_order_structure": {
+                    "value": -4,
+                    "gain": 0.6,
+                    "confidence": 0.65,
+                    "notes": "Preference for flexible legal orders capable of adaptation to changing social conditions and justice considerations. Emphasis on evolving constitutional interpretation and updating laws to address emerging social concerns rather than strict originalism."
+                },
+                "human_behavioral_assumption": {
+                    "value": -5.5,
+                    "gain": 0.75,
+                    "confidence": 0.7,
+                    "notes": "Cooperative orientation assuming humans are capable of mutual aid and collective problem-solving when institutional conditions support cooperation. Skepticism of purely competitive models; emphasis on removing structural incentives for exploitation."
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Claude Sonnet 4.5",
+            "report_date": "20251209000000",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The American Left encompasses a broad coalition including progressive Democrats, democratic socialists, social justice activists, and labor movements. This assessment reflects the dominant positions within this coalition circa 2025, acknowledging significant internal diversity on many issues. The term represents a political tendency rather than a unified organization.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 4.5,
+                    "gain": 0.75,
+                    "confidence": 0.8,
+                    "notes": "Generally supports expanded government role in healthcare, labor protections, environmental regulation, and social services, while favoring reduced authority in areas like criminal justice and personal social choices."
+                },
+                "decision_structure": {
+                    "value": 2,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Moderate preference for decentralized approaches through local organizing and participatory democracy, though supports federal action on national issues like healthcare and climate. Contains tension between grassroots and institutional wings.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 4,
+                    "gain": 0.7,
+                    "confidence": 0.75,
+                    "notes": "Favors mixed economy with substantial public and collective ownership of key sectors like healthcare and utilities, worker cooperatives, and strong regulations on private capital, while generally accepting private ownership in many sectors.",
+                    "polarity_corrected": true
+                },
+                "economic_allocation": {
+                    "value": 5.5,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Supports significant administrative allocation through universal healthcare, expanded social programs, progressive taxation, and economic planning for climate transition, while maintaining market mechanisms in many sectors.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": -6,
+                    "gain": 0.85,
+                    "confidence": 0.85,
+                    "notes": "Strong emphasis on collective welfare, social solidarity, mutual aid, and addressing systemic inequalities through community-oriented policies. Frames issues in terms of shared responsibility and interdependence."
+                },
+                "cultural_orientation": {
+                    "value": -7.5,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strongly change-oriented regarding social norms around gender, race, sexuality, family structures, and institutional practices. Emphasizes ongoing adaptation to address historical injustices and evolving social understandings.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": 6.5,
+                    "gain": 0.75,
+                    "confidence": 0.85,
+                    "notes": "Predominantly secular orientation favoring separation of religious doctrine from policy-making, though includes religious left traditions. Emphasizes pluralism and opposes religious influence in areas like education and reproductive rights."
+                },
+                "identity_scope": {
+                    "value": -4,
+                    "gain": 0.65,
+                    "confidence": 0.7,
+                    "notes": "Generally emphasizes international cooperation, human rights frameworks, and global solidarity on issues like climate and labor, while maintaining focus on domestic inequality and containing strains of economic nationalism on trade.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -7,
+                    "gain": 0.9,
+                    "confidence": 0.85,
+                    "notes": "Strongly favors horizontal power distribution through reducing economic inequality, challenging hierarchies based on race, gender, and class, and expanding democratic participation. Central concern with dismantling concentrated power."
+                },
+                "institutional_orientation": {
+                    "value": -1,
+                    "gain": 0.6,
+                    "confidence": 0.65,
+                    "notes": "Mixed stance: supports institutions like scientific bodies, public education, and regulatory agencies while expressing skepticism toward corporate media, police, military, and aspects of electoral system. Varies significantly across the coalition."
+                },
+                "legal_order_structure": {
+                    "value": 2.5,
+                    "gain": 0.55,
+                    "confidence": 0.6,
+                    "notes": "Moderately favors flexible legal frameworks that can adapt to social change and evolving understanding of rights, supports judicial interpretation responsive to contemporary conditions, though maintains commitment to constitutional principles."
+                },
+                "human_behavioral_assumption": {
+                    "value": -5,
+                    "gain": 0.75,
+                    "confidence": 0.75,
+                    "notes": "Generally assumes cooperative orientation, viewing social problems as structural rather than individual moral failures. Emphasizes that people respond to systemic conditions and can organize collectively when barriers are removed."
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Gemini Fast",
+            "report_date": "20251209152109",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The American Left is treated as the macro-movement encompassing contemporary progressives, social democrats, and democratic socialists in the US, as well as more radical groups. The classification focuses on the dominant platforms and intellectual trends of the movement in the current period (2025), which often involve using the existing state apparatus to achieve economic and social reforms.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": 7,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Generally favors High State Authority to enforce social equity, regulate the economy, and expand social welfare programs, believing the government must actively address systemic issues."
+                },
+                "decision_structure": {
+                    "value": 2,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Generally leans towards Centralized authority to ensure uniform, universal application of policies (e.g., healthcare, climate regulation) but has internal factions advocating for Decentralized community/grassroots power."
+                },
+                "ownership_model": {
+                    "value": 4.5,
+                    "gain": 0.8,
+                    "confidence": 0.7,
+                    "notes": "Stands between Private Ownership and Collective Ownership. The mainstream favors private ownership with heavy regulation and social ownership of some key sectors (e.g., utilities, healthcare); the far-left favors collective ownership of all productive assets."
+                },
+                "economic_allocation": {
+                    "value": -6.5,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Strongly favors Administrative Allocation through progressive taxation, extensive social spending, price controls in specific sectors (e.g., housing, medicine), and detailed economic planning to manage major transitions like climate change.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": -7.5,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Emphasizes Community Priority, focusing on collective welfare, social justice, group-based rights, and the idea that individual flourishing is contingent on the health and equity of the community.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": -9,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Overwhelmingly Change-Oriented, favoring adaptation and fundamental reform of existing social norms, institutions, and traditions to dismantle perceived systemic inequalities related to race, gender, and sexuality.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": 8.5,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Strongly Secular, advocating for a strict separation of church and state and often viewing religious influence in public life as a barrier to social progress and pluralism."
+                },
+                "identity_scope": {
+                    "value": -6.5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Leans toward Global Identity Emphasis, supporting international cooperation, multilateralism, and open borders, while often being critical of nationalism and national exceptionalism.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -8,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strongly favors Horizontal Power Distribution, actively seeking to dismantle traditional social hierarchies, reduce status differences, and empower marginalized groups through policy and institutional reform.",
+                    "polarity_corrected": true
+                },
+                "institutional_orientation": {
+                    "value": 4,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Holds a moderate position. It expresses High Institutional Confidence in specific entities like scientific bodies and certain federal agencies, but displays Low Institutional Confidence in others like the police, courts, and corporate media."
+                },
+                "legal_order_structure": {
+                    "value": -6,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Leans toward a Flexible Legal Order, favoring the use of policy and legal interpretation to adapt quickly to evolving social conditions, environmental crises, and human rights understandings, rather than favoring rigid adherence to old precedent.",
+                    "polarity_corrected": true
+                },
+                "human_behavioral_assumption": {
+                    "value": -7,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Assumes a fundamentally Cooperative Orientation, believing that individuals are inclined toward mutual benefit when social structures are reformed to remove systemic obstacles and provide universal support (e.g., healthcare, education).",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Gemini Thinking",
+            "report_date": "20251209152145",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The subject represents a broad coalition ranging from center-left liberals to democratic socialists and progressives in the United States. Values reflect a weighted average of this coalition, emphasizing the mainstream progressive consensus while acknowledging the tension between establishment institutionalism and grassroots activism.",
+            "sources": [
+                "Pew Research Center - Political Typology",
+                "Democratic Party Platforms and Progressive Caucus manifestos (contemporary)",
+                "Academic literature on American liberalism and progressivism"
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -6,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strongly favors government intervention in the economy, healthcare, and environmental regulation to ensure equity and public welfare."
+                },
+                "decision_structure": {
+                    "value": -3,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Generally relies on federal standards to protect civil rights and manage large-scale programs, though supports local grassroots organizing."
+                },
+                "ownership_model": {
+                    "value": 4,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Primarily supports a mixed economy with regulated private ownership, though increasingly open to public options in key sectors like utilities and healthcare.",
+                    "polarity_corrected": true
+                },
+                "economic_allocation": {
+                    "value": 4,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Advocates for administrative mechanisms (subsidies, price caps, progressive taxation) to correct market failures and redistribute wealth."
+                },
+                "social_priority": {
+                    "value": -4,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Emphasizes systemic responsibility and community welfare (solidarity) while vigorously defending individual civil liberties.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": 8,
+                    "gain": 0.9,
+                    "confidence": 0.9,
+                    "notes": "Strongly oriented toward social progress, challenging historical norms, and addressing systemic inequalities."
+                },
+                "political_theology": {
+                    "value": -7,
+                    "gain": 0.7,
+                    "confidence": 0.9,
+                    "notes": "Advocates for a strict separation of church and state and secular governance, despite the presence of a religious left minority.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Tends toward internationalism and global cooperation on issues like climate change and human rights, viewing national borders as less defining.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -7,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": " seeks to flatten social hierarchies related to race, gender, and class, promoting equity and inclusivity.",
+                    "polarity_corrected": true
+                },
+                "institutional_orientation": {
+                    "value": -2,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Shows relatively higher trust in scientific and academic institutions compared to the Right, but remains critical of law enforcement and corporate influence."
+                },
+                "legal_order_structure": {
+                    "value": 7,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Favors a flexible interpretation of laws and the Constitution to adapt to modern societal needs and evolving standards of justice."
+                },
+                "human_behavioral_assumption": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": " generally assumes human behavior is shaped by systemic environments and that cooperation is possible given equitable structures.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "M365 Copilot Think Deeper",
+            "report_date": "20251209152448",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "Interprets the subject as contemporary U.S. left-of-center tendencies as of 2025, spanning liberals, progressives, and social democrats. This is not a single organization; positions vary across factions and contexts.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Generally favors expanded public roles in regulation, social insurance, and civil-rights enforcement, within constitutional limits; emphasis varies by faction."
+                },
+                "decision_structure": {
+                    "value": 2,
+                    "gain": 0.4,
+                    "confidence": 0.6,
+                    "notes": "Leans toward federal standards on rights and environment while supporting participatory/local initiatives; mixed centralization.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": 3,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Advocates a mixed economy with public options and cooperative forms alongside private ownership; limited preference for state ownership."
+                },
+                "economic_allocation": {
+                    "value": 3.5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Prefers regulated markets complemented by administrative tools (programs, standards, subsidies) to advance equity and public goods."
+                },
+                "social_priority": {
+                    "value": -4,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Emphasizes community welfare, equity, and social safety nets while upholding individual rights.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": -6,
+                    "gain": 0.8,
+                    "confidence": 0.8,
+                    "notes": "Generally change-oriented on social norms (e.g., inclusion, rights expansion), with pragmatic variation in pace.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": -6,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Largely secular in political stance, stressing church–state separation; personal religiosity varies.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": 3,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Favors multilateralism and global cooperation while retaining national institutions as primary civic anchors."
+                },
+                "social_power_distribution": {
+                    "value": 4.5,
+                    "gain": 0.7,
+                    "confidence": 0.7,
+                    "notes": "Advocates flatter social hierarchies through worker protections, anti-discrimination measures, and social equity policies."
+                },
+                "institutional_orientation": {
+                    "value": -1.5,
+                    "gain": 0.4,
+                    "confidence": 0.5,
+                    "notes": "Relatively higher trust in expert-led public institutions, with issue-dependent skepticism toward concentrated corporate or security power."
+                },
+                "legal_order_structure": {
+                    "value": -4,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Prefers adaptable laws and regulatory change to address evolving social and economic conditions.",
+                    "polarity_corrected": true
+                },
+                "human_behavioral_assumption": {
+                    "value": -3.5,
+                    "gain": 0.5,
+                    "confidence": 0.6,
+                    "notes": "Assumes cooperation is viable when supported by shared goals and institutions; competition is tempered by rules.",
+                    "polarity_corrected": true
+                }
+            }
+        },
+        {
+            "model_version": "01.00",
+            "prompt_version": "01.00.00.00",
+            "reporter": "Enterprise Copilot GPT-5 Quick response",
+            "report_date": "20251209154210",
+            "subject": "The American Left",
+            "subject_year": 2025,
+            "reporter_notes": "The subject refers broadly to left-leaning political movements and ideologies in the United States as of the current period. This includes progressive, social democratic, and some socialist tendencies, but excludes far-left revolutionary groups. Interpretations are generalized and based on mainstream characteristics.",
+            "sources": [
+                "Model-internal knowledge only; no external sources available."
+            ],
+            "axes": {
+                "authority_scope": {
+                    "value": -3.5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Generally favors more government involvement in social and economic regulation compared to libertarian or conservative positions, but not absolute state control."
+                },
+                "decision_structure": {
+                    "value": 2,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Leans toward centralized federal solutions for issues like healthcare and climate policy, though supports local autonomy in some areas.",
+                    "polarity_corrected": true
+                },
+                "ownership_model": {
+                    "value": -4,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Advocates for mixed economy with strong public sector roles and regulation, but does not generally call for full collectivization."
+                },
+                "economic_allocation": {
+                    "value": 3,
+                    "gain": 0.6,
+                    "confidence": 0.8,
+                    "notes": "Supports regulated markets with administrative interventions such as subsidies and social programs rather than pure market allocation.",
+                    "polarity_corrected": true
+                },
+                "social_priority": {
+                    "value": 6,
+                    "gain": 0.8,
+                    "confidence": 0.9,
+                    "notes": "Emphasizes community welfare, equity, and collective responsibility over purely individual autonomy.",
+                    "polarity_corrected": true
+                },
+                "cultural_orientation": {
+                    "value": -6,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Strongly favors progressive social change, diversity, and adaptation of norms to contemporary values.",
+                    "polarity_corrected": true
+                },
+                "political_theology": {
+                    "value": -8,
+                    "gain": 0.5,
+                    "confidence": 0.9,
+                    "notes": "Predominantly secular in governance, advocating separation of church and state.",
+                    "polarity_corrected": true
+                },
+                "identity_scope": {
+                    "value": -3.5,
+                    "gain": 0.6,
+                    "confidence": 0.7,
+                    "notes": "Supports international cooperation and global identity elements, though still values national frameworks.",
+                    "polarity_corrected": true
+                },
+                "social_power_distribution": {
+                    "value": -5,
+                    "gain": 0.7,
+                    "confidence": 0.8,
+                    "notes": "Advocates reducing hierarchical disparities and promoting egalitarian social structures."
+                },
+                "institutional_orientation": {
+                    "value": 2,
+                    "gain": 0.4,
+                    "confidence": 0.6,
+                    "notes": "Generally trusts institutions like government and science but includes skepticism toward corporate influence and systemic bias."
+                },
+                "legal_order_structure": {
+                    "value": -2,
+                    "gain": 0.4,
+                    "confidence": 0.6,
+                    "notes": "Favors adaptable legal frameworks to address evolving social and technological conditions."
+                },
+                "human_behavioral_assumption": {
+                    "value": -4,
+                    "gain": 0.5,
+                    "confidence": 0.7,
+                    "notes": "Assumes cooperative potential among individuals, emphasizing solidarity and mutual aid over competition.",
+                    "polarity_corrected": true
+                }
+            }
+        }
+    ]
+}

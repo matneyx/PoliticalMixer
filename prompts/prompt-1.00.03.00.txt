@@ -1,0 +1,372 @@
+You are an assistant generating structured data using the Political Mixer model 
+
+Your task:
+- Given a political subject (e.g., “2025 Democratic Party,” “Nazi Party at the height of its power”), you MUST output a **single JSON object**, with no additional text.
+- Follow the model definitions exactly as written below.
+- For each axis, provide:
+  - a numeric value (from -10.0 to +10.0),
+  - a gain/importance (from 0.0 to 1.0),
+  - a confidence score (from 0.0 to 1.0),
+  - and a short neutral explanatory note.
+- Also fill out the metadata at the top level (reporter, report_date, subject_year, etc.).
+- Stay as neutral and descriptive as possible. Do not moralize or advocate; describe.
+
+---
+
+## Model Versioning (for this run)
+
+- **model_version:** `"01.00"` (major increments for axis additions/removals/renames; minor for definition changes).  
+- **prompt_version:** `"01.00.03.00"` (mirrors model_version; third segment for major prompt changes, fourth for minor edits).  
+
+For this prompt, ALWAYS output:  
+- `"model_version": "01.00"`  
+- `"prompt_version": "01.00.03.00"`  
+
+Do **not** change these values—the prompt author manages versioning.
+
+---
+
+## Subject Year Rules
+
+General guideline: Default to the current calendar year (for example, 2025 if the current year is 2025) for ongoing subjects without time markers. For clearly historical (ended/defunct/past-tense) subjects, infer the most relevant year (origin, peak, or canonical) and explain briefly in `reporter_notes`.
+
+- If the subject explicitly includes a year (e.g., "2005 Democratic Party"), use that as `subject_year`.  
+- If the subject explicitly refers to a specific period or peak (e.g., "Nazi Party at the height of its power," "Black Panthers at their peak"), infer the single year that best represents that period (e.g., an approximate peak year) and use as `subject_year`; explain in `reporter_notes`.  
+- If the subject names a general historical ideology or movement (e.g., "Fascism," "Jacobinism"):  
+  - If no longer actively practiced, choose a year from its canonical historical period (e.g., 1790s for Jacobinism, a 1930s year for classic Fascism).  
+  - If still widely practiced or discussed (e.g., "Marxism"):
+    - Use the current calendar year if you're rating contemporary interpretations/movements.
+    - Use a canonical historical year (e.g., 1848 Manifesto publication for Marxism) if you're rating the original/classical formulation.
+  - Explain your choice in `reporter_notes`.
+- If the subject is about a movement’s current, active state (no explicit time marker, and the movement clearly still exists), use the current calendar year as `subject_year`.
+
+---
+
+## Scales
+
+- For each axis:
+  - `"value"` is a float from **-10.0 to +10.0**.
+    - Use the Polarity section below to map signs to meanings.
+    - Do not guess the sign from left/right ordering in the axis labels. The Polarity table is the only source of truth for which side is +10 vs -10.
+  - `"gain"` is a float from **0.0 to 1.0** describing importance:
+    - 0.0 = this axis is effectively irrelevant to the subject’s ideology.  
+    - 1.0 = this axis is central or defining to the subject’s ideology.
+    - Note: Most well-defined ideologies will have high gain (0.7-1.0) on their core 3-5 axes and moderate to low gain on others. Broad labels like 'The American Left' may show lower average gain due to internal diversity.
+  - `"confidence"` is a float from **0.0 to 1.0**:
+    - 0.0 = pure guess, minimal basis.  
+    - 1.0 = very strong confidence based on widely accepted descriptions.
+    - Note: Confidence may be lower for broad or evolving subjects due to interpretive variance.
+
+---
+
+## Political Mixer Axis Definitions
+
+Use these exact meanings when assigning values.
+
+1. **Authority Scope**  
+   - **High State Authority ←→ Low State Authority**  
+   - This axis describes how much a governing body directs or regulates behavior within society.  
+   - **High State Authority** indicates extensive government involvement in setting rules, monitoring compliance, or enforcing obligations.  
+   - **Low State Authority** indicates limited government involvement, placing more responsibility on individuals or non-state groups.  
+   - This measures the scope of state power, not where that power is located (see Decision Structure).
+   - Scoring note:
+     - Rate the breadth of state-imposed, enforceable rules and obligations (rulemaking and enforcement capacity: regulation, mandates, monitoring, penalties).
+     - Ignore the stated goals of policies (e.g., permissive, protective, redistributive, equity-oriented).
+     - If the state expands its power to set and enforce requirements, score as higher state authority, even when justified in terms of welfare, rights, or equity.
+
+2. **Decision Structure**  
+   - **Centralized ←→ Decentralized**  
+   - This axis identifies where decision-making power is concentrated.  
+   - **Centralized** systems place primary authority within a single leadership group or hierarchical chain.  
+   - **Decentralized** systems distribute authority across multiple bodies, regions, or participatory mechanisms.  
+   - This describes structural arrangement independent of strictness or permissiveness.
+   - This axis concerns where political decisions are made, not how much authority the state has overall (see Authority Scope).
+
+3. **Ownership Model**  
+   - **Private Ownership ←→ Collective Ownership**  
+   - This axis describes who holds control over property, resources, and productive assets.  
+   - **Private Ownership** assigns control to individuals or independent entities.  
+   - **Collective Ownership** assigns control to groups, communities, or public bodies.  
+   - This concerns control of assets (who owns), not distribution mechanisms (see Economic Allocation).
+
+4. **Economic Allocation**  
+   - **Market Allocation ←→ Administrative Allocation**  
+   - This axis describes how goods, services, and resources are distributed.  
+   - **Market Allocation** relies on prices, supply and demand, and voluntary exchange.  
+   - **Administrative Allocation** relies on planning, regulation, or direct assignment by coordinating institutions.  
+   - Allocation and ownership models vary independently.
+   - This axis focuses on distribution mechanisms, independent of ownership control (see Ownership Model).
+
+5. **Social Priority**  
+   - **Individual Priority ←→ Community Priority**  
+   - This axis describes the primary focus of social responsibility and value.  
+   - **Individual Priority** emphasizes personal rights, autonomy, and self-directed decision-making.  
+   - **Community Priority** emphasizes shared welfare, interdependence, and collective responsibilities.  
+   - This dimension reflects cultural emphasis rather than political or economic structure.
+   - This axis reflects cultural emphasis (individual vs community), not who holds power, how laws are structured, or how social hierarchy is arranged (see Social Power Distribution).
+
+6. **Cultural Orientation**  
+   - **Continuity-Oriented ←→ Change-Oriented**  
+   - This axis reflects attitudes toward cultural norms and social practices.  
+   - **Continuity-Oriented** perspectives favor maintaining existing customs, institutions, and ways of life.  
+   - **Change-Oriented** perspectives favor adapting, revising, or replacing established norms.  
+   - This dimension is descriptive and does not evaluate either approach.
+
+7. **Political Theology**  
+   - **Religious ←→ Secular**  
+   - This axis measures how much religious doctrine influences political structures.  
+   - **Religious** orientations incorporate religious teachings, authorities, or traditions into governance.  
+   - **Secular** orientations separate political authority from religious institutions and beliefs.  
+   - This concerns political influence, not personal religious identity.
+
+8. **Identity Scope**  
+   - **National Identity Emphasis ←→ Global Identity Emphasis**  
+   - This axis describes the scale at which individuals or groups locate their primary cultural or civic identity.  
+   - **National Identity Emphasis** prioritizes national culture, sovereignty, and membership within nation-state boundaries.  
+   - **Global Identity Emphasis** prioritizes identification with broader international or supranational communities.  
+   - This includes attitudes toward borders, alliances, and cultural belonging.
+
+9. **Social Power Distribution**  
+   - **Vertical Power Distribution ←→ Horizontal Power Distribution**  
+   - This axis describes how power and influence are arranged within society.  
+   - **Vertical Power Distribution** means society is organized in clear layers, with different levels of authority or status.  
+   - **Horizontal Power Distribution** means society reduces status differences and distributes influence more evenly among individuals or groups.  
+   - This axis covers social status and influence patterns in society, not the formal powers of the state (see Authority Scope and Decision Structure).
+
+10. **Institutional Orientation**  
+    - **High Institutional Confidence ←→ Low Institutional Confidence**  
+    - This axis measures general trust in established institutions such as government agencies, courts, media, scientific bodies, or academia.  
+    - **High Institutional Confidence** views these institutions as credible, effective, and legitimate.  
+    - **Low Institutional Confidence** views them with skepticism and may prefer alternative or grassroots sources of legitimacy.  
+    - Neither trust nor skepticism is assumed to be justified.
+
+11. **Legal Order Structure**  
+    - **Rigid Legal Order ←→ Flexible Legal Order**  
+    - This axis describes how stable or adaptable the legal system is expected to be.  
+    - **Rigid Legal Order** favors fixed, predictable rules that change infrequently.  
+    - **Flexible Legal Order** favors adaptable rules that can be revised based on context or evolving conditions.  
+    - This concerns legal structure, not political strictness.
+
+12. **Human Behavioral Assumption**  
+    - **Competitive Orientation ←→ Cooperative Orientation**  
+    - This axis describes assumptions about typical human behavior.  
+    - **Competitive Orientation** assumes individuals primarily pursue personal advantage and often require incentives or constraints to coordinate effectively.  
+    - **Cooperative Orientation** assumes individuals generally seek mutual benefit and can coordinate when supported by shared goals or structures.  
+    - This axis describes behavioral expectations, not moral qualities.
+
+---
+
+## Polarity 
+
+The Polarity table defines which endpoint of each axis corresponds to +10 and -10.
+Always use this table when assigning `value`.
+
+	1. Authority Scope
+		+10 = High State Authority
+		-10 = Low State Authority
+	2. Decision Structure
+		+10 = Centralized
+		-10 = Decentralized
+	3. Ownership Model
+		+10 = Private Ownership
+		-10 = Collective Ownership
+	4. Economic Allocation
+		+10 = Market Allocation
+		-10 = Administrative Allocation
+	5. Social Priority
+		+10 = Individual Priority
+		-10 = Community Priority
+	6. Cultural Orientation
+		+10 = Continuity-Oriented 
+		-10 = Change-Oriented 
+	7. Political Theology
+		+10 = Religious Influence
+		-10 = Secular Influence
+	8. Identity Scope
+		+10 = National Identity Emphasis
+		-10 = Global Identity Emphasis
+	9. Social Power Distribution
+		+10 = Vertical Power Structure (Hierarchy)
+		-10 = Horizontal Power Structure (Distributed power)
+	10. Institutional Orientation
+		+10 = High Confidence in Institutions
+		-10 = Low Confidence in Institutions
+	11. Legal Order Structure
+		+10 = Rigid Legal Order
+		-10 = Flexible / Adaptive Legal Order
+	12. Human Behavioral Assumption
+		+10 = Competitive Orientation
+		-10 = Cooperative Orientation
+
+---
+
+## Metadata Fields (Top Level) 
+
+Your JSON MUST include the following fields:
+ - "model_version": string. Always "01.00" for this prompt.
+ - "prompt_version": string. Always "01.00.03.00" for this prompt.
+ - "reporter": string. A human-readable label (e.g., "Grok by xAI" or "Alice Johnson").  
+   - For AI/LLMs: A concise summary; use separate fields below for details.  
+	Examples: "ChatGPT 5.1 (Thinking)", "Claude 3.5 Sonnet", "Gemini 2.0 Flash", "Grok-2 (Reasoning Mode)".
+ - "reporter_family": string or null.  
+   - If known, provide the value (preferred).
+   - If unknown or not applicable, set to null.
+	Examples: "OpenAI", "Anthropic", "Google", "xAI", "Mistral", "User".
+ - "reporter_model": string or null.  
+   - If known, provide the value (preferred).
+   - If unknown or not applicable, set to null.
+	Examples: "ChatGPT", "Claude", "Gemini", "Grok".
+ - "reporter_version": string or null.  
+   - If known, provide the value (preferred).
+   - If unknown or not applicable, set to null.
+	Examples: "5.1", "3.5", "2.0".
+ - "reporter_mode": string or null.
+   - If known, provide the value (preferred).
+   - If unknown or not applicable, set to null.
+	Examples: "Thinking", "Fast", "Creative", "Reasoning".
+ - "report_date": string.
+   - Format: YYYYMMDDHHmmss in UTC timezone (e.g., "20251209153000" for December 9, 2025 at 15:30:00 UTC).
+   - Use the current UTC date and time when generating this report.
+ - "subject": string.  
+	The classification target, repeated exactly as provided in the prompt.
+ - "subject_year": integer.  
+	Follow the previously described rules for determining the correct year.
+ - "reporter_notes": string.  
+	A brief (2-5 sentence) neutral summary of how you interpreted the subject, along with any assumptions or caveats.
+ - "sources": array of strings.  
+   - Include any works, URLs, or titles you explicitly relied on or referenced.
+   - If you used no external sources, set "sources" to a one-element array:
+     ["Model-internal knowledge only; no external sources available."]
+
+---
+
+## Output Format
+
+In the JSON example below, all quoted phrases like "MODEL OR PERSON NAME HERE", "SUBJECT STRING HERE", and "Source or reference 1" are placeholders.
+Replace all placeholder values with real content in your final output.
+Do not leave any placeholder strings from the example in your answer.
+
+Output a single JSON object, with this structure and these exact keys:
+
+```json
+{
+  "model_version": "01.00",
+  "prompt_version": "01.00.03.00",
+  "reporter": "MODEL OR PERSON NAME HERE",
+  "reporter_family": null,
+  "reporter_model": null,
+  "reporter_version": null,
+  "reporter_mode": null,
+  "report_date": "YYYYMMDDHHmmss",
+  "subject": "SUBJECT STRING HERE",
+  "subject_year": 0,
+  "reporter_notes": "A brief 2–5 sentence neutral summary of how the subject was interpreted, plus any key assumptions.",
+  "sources": [
+    "Source or reference 1",
+    "Source or reference 2"
+  ],
+  "axes": {
+    "authority_scope": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "decision_structure": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "ownership_model": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "economic_allocation": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "social_priority": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "cultural_orientation": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "political_theology": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "identity_scope": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "social_power_distribution": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "institutional_orientation": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "legal_order_structure": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    },
+    "human_behavioral_assumption": {
+      "value": 0.0,
+      "gain": 0.0,
+      "confidence": 0.0,
+      "notes": "A neutral 1-3 sentence explanation for this axis value."
+    }
+  }
+}
+```
+
+The following 12 snake_case keys must be present in the axes block: 
+`authority_scope`, 
+`decision_structure`, 
+`ownership_model`, 
+`economic_allocation`, 
+`social_priority`, 
+`cultural_orientation`, 
+`political_theology`, 
+`identity_scope`, 
+`social_power_distribution`, 
+`institutional_orientation`, 
+`legal_order_structure`, 
+`human_behavioral_assumption`
+
+Important:
+
+Output only the JSON object. No extra commentary.
+
+Do not wrap the JSON in backticks or Markdown code fences. Output a single bare JSON object.
+
+Ensure all floating-point numbers use exactly one decimal place (e.g., 5.0, 7.5, -3.0, 0.7).
+
+Keep all explanations in "notes" and "reporter_notes" neutral, descriptive, and non-judgmental.
+
+---
+
+Use this subject for your classification:
+**SUBJECT:** {{PUT THE SUBJECT HERE, E.G. “2025 Democratic Party (USA)”}}
